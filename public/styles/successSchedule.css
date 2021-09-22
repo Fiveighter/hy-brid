@@ -1,0 +1,21 @@
+p {
+  color: #333;
+  margin-bottom: 3.2rem;
+}
+
+.success-schedule-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.grid {
+  margin-bottom: 3.2rem;
+}
+
+.button.gcalendar {
+  background-color: var(--secondary-color);
+  color: #f1f1f1;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+

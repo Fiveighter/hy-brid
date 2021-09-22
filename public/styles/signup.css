@@ -1,0 +1,18 @@
+.container.login {
+  align-items: center;
+}
+
+small {
+  color: var(--gray-color);
+  font-size: 1.3rem;
+  margin-bottom: 3.2rem;
+}
+
+small a {
+  color: var(--primary-color);
+}
+
+.container.login > img.logo {
+   width: 14.2rem;
+   margin-bottom: 6.4rem;
+}

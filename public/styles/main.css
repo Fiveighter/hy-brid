@@ -1,0 +1,120 @@
+:root {
+  font-size: 62.5%;
+  --primary-color: #fc6027;
+  --secondary-color: #4b4fa1;
+  --third-color: #e3dfde;
+  --fourth-color: #303033;
+  --gray-color: #8B8B8B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--fourth-color);
+}
+
+/* ============ GENERAL ============ */
+body {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  overflow-x: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  font-size: 16px;
+  background-color: #fff;
+  letter-spacing: -0.02em;
+  font-family: "Metropolis", sans-serif;
+}
+
+/* ============ LINKS AND BUTTONS ============ */
+button {
+  border: none;
+}
+
+.button {
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-weight: 500;
+  margin: 0 auto;
+  padding: 1rem 0;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 3px 3px rgba(48, 48, 51, 0.15);
+  transition: all 400ms;
+}
+
+.button img {
+  margin-left: 0.8rem;
+}
+
+/* .button:hover {
+  background-color: var(--secondary-color);
+  box-shadow: 2px 2px 4px -2px rgba(0, 0, 0, 0.7);
+} */
+
+a {
+  font-weight: 500;
+}
+
+/* ============ STRUCTURE ============ */
+.content {
+  margin: 0 auto;
+  width: 90%;
+  height: 100%;
+  max-width: 940px;
+}
+
+header.content {
+  height: 6.4rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2.4rem 0 4.8rem;
+  max-width: 500px;
+}
+
+.other-links {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+/* ================ MESSAGE POPUP ================ */
+.message-popup {
+  position: fixed;
+  bottom: 1.4rem;
+  right: -25rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  font-weight: 500;
+  max-width: min(90%, 25rem);
+  word-wrap: break-word;
+  word-break: normal;
+  /* flex-wrap: wrap; */
+  opacity: 0;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  transition: all 400ms ease-in-out;
+}
+
+.message-popup.active {
+  right: 1.4rem;
+  opacity: 1;
+}
+
+.message-popup img {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1.2rem;
+}

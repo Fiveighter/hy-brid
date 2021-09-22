@@ -1,0 +1,88 @@
+small,
+small span {
+  font-size: 1.2rem;
+  color: var(--gray-color);
+}
+
+.rooms {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  width: 100%;
+  margin: 1.8rem 0;
+}
+
+.room-container p {
+  text-align: center;
+}
+
+.room .desks {
+  display: none;
+}
+
+.desks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5.8rem;
+  margin-bottom: 3.2rem;
+}
+
+.desk {
+  border-radius: 100%;
+  background-color: #3cd242;
+  width: 1.6rem;
+  height: 1.6rem;
+  align-self: center;
+  justify-self: center;
+  cursor: pointer;
+  transition: all 400ms;
+}
+
+.desk.occuped {
+  background-color: #d23c3c4d;
+  cursor: not-allowed;
+}
+
+.desk.active {
+  background: var(--secondary-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.desks-info {
+  margin: 0.8rem 0 3.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.6rem;
+}
+
+.desks-info > div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.desks-info > div > .desk {
+  width: 1rem;
+  height: 1rem;
+}
+
+form {
+  width: 100%;
+}
+
+.button {
+  width: 100%;
+}
+
+#desksForm .button {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.modal-content p {
+  text-align: left;
+}
+
+.modal .button {
+  margin-top: 1.6rem;
+}
